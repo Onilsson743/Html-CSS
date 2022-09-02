@@ -84,6 +84,10 @@ html, body {
     
 
     /* Right side */
+    .top-menu .right-side {
+        display: flex;
+    }
+
     .top-menu a{
         color: var(--color-white);
         text-decoration: none;
@@ -116,7 +120,9 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1.5rem 0;
+    justify-content: space-between;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
 }
 
     .main-menu .brand {
@@ -161,13 +167,12 @@ html, body {
     /* Right side */
     .main-menu-bottom .special-offer {
         display: flex;
-        
     }
         .main-menu-bottom .special-offer button {
             background-color: var(--color-theme);
             color: var(--color-white);
             border-radius: var(--border-radius-medium);
-            margin-right: 1rem;
+            
         }
         .main-menu-bottom .special-offer button:hover {
             background-color: var(--color-theme-dark);
@@ -176,38 +181,47 @@ html, body {
 
 
 /* Banner section */
-
-.showcase .container{
+.showcase {
     background-color: var(--color-gray-3);
-    text-align: center; 
-    padding: 1.5rem 0;
-    
 }
-    
-    .showcase .container h1{
-        font-size: 3.7em;
-        font-family: var(--font-play);
-        
-    }
-        .showcase .container strong {
-            color: var(--color-theme);
-        }
 
-        .showcase .container button {
-            background-color: var(--color-white);
-            color: var(--color-white);
-            border-radius: var(--border-radius-medium);
-            border-bottom: 2rem;
+    .showcase .container{
+        background-color: var(--color-gray-3);
+        text-align: center; 
+        padding: 1.5rem 0;    
+    }
+        .showcase .headline-text {
+            display: flex;
+            flex-direction: column;
         }
-            .showcase .container button:hover {
-                background-color: var(--color-theme-dark);
-            }
-            .showcase .container button a{
+        .showcase .container h1{
+            font-size: 3.7em;
+            font-family: var(--font-play);
+            
+        }
+            .showcase .container strong {
                 color: var(--color-theme);
-                font-weight: var(--font-weight-medium);
-                font-size: var(--font-size-18pt);
-                text-decoration: none;
+                font-size: 3.7rem;
             }
+
+            .showcase .container button {
+                background-color: var(--color-white);
+                color: var(--color-white);
+                border-radius: var(--border-radius-medium);
+                margin-bottom: 1.2rem;
+                margin-right: 20%;
+                margin-left: 20%;
+
+            }
+                .showcase .container button:hover {
+                    background-color: var(--color-theme-dark);
+                }
+                .showcase .container button a{
+                    color: var(--color-theme);
+                    font-weight: var(--font-weight-medium);
+                    font-size: var(--font-size-18pt);
+                    text-decoration: none;
+                }
                 
     /* Hidden mobile content */
     .showcase img {
@@ -256,6 +270,65 @@ html, body {
 
 @media (min-width: 768px) {
 
+    /* Top Menu bar */
+    .top-menu .social-media{
+        display: flex;
+    }
+        .top-menu .social-media a {
+            margin-right: 1rem;
+        }
+    
+    .top-menu .top-menu-links {
+        display: flex;
+    }
+        .top-menu .top-menu-links a {
+            margin-right: 1rem;
+        }
+    
+    /* Hidden content */
+    .top-menu .menu-links {
+        display: none;
+    }
+
+    /* Main menu */
+    .main-menu .container {
+        flex-direction: row;
+        
+    }
+        .main-menu .container .input-group {
+            flex: 2;
+            margin-left: 1rem;
+        }
+
+    .main-menu .menu-links {
+        display: flex;
+    }
+        .main-menu .menu-links a{
+            color: var(--color-theme-dark);
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+    
+    .showcase .container {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        text-align: left;
+    }
+        .showcase .container button{
+            margin: 0;
+            width: 40%;
+        }
+    
+        /* Added content */
+        .showcase img {
+            display: block;
+            width: 50%;
+        }
+    
+    .information-links {
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 992px) {

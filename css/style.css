@@ -280,6 +280,9 @@ html, body {
             margin-right: 1rem;
             
         }
+            .top-menu .social-media a:hover {
+                color: var(--color-theme-dark);
+            }
     
     .top-menu .top-menu-links {
         display: flex;
@@ -287,6 +290,9 @@ html, body {
         .top-menu .top-menu-links a {
             margin-right: 1rem;
         }
+            .top-menu .top-menu-links a:hover {
+                color: var(--color-theme-dark);
+            }
     
     /* Hidden content */
     .top-menu .menu-links {
@@ -311,6 +317,9 @@ html, body {
             text-decoration: none;
             margin-left: 1rem;
             font-size: var(--font-size-14pt);
+        }
+        .main-menu .menu-links a:hover{
+            color: var(--color-theme);
         }
     
     .showcase .container {

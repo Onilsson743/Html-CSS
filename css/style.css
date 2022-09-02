@@ -178,44 +178,72 @@ html, body {
 /* Banner section */
 
 .showcase .container{
+    background-color: var(--color-gray-3);
     text-align: center; 
+    padding: 1.5rem 0;
+    
 }
+    
     .showcase .container h1{
         font-size: 3.7em;
         font-family: var(--font-play);
-        margin: 2rem 0;
+        
     }
         .showcase .container strong {
             color: var(--color-theme);
         }
 
         .showcase .container button {
-            
-        }
-
-        /* .showcase .showcase-button {
             background-color: var(--color-white);
             color: var(--color-white);
             border-radius: var(--border-radius-medium);
-            padding: 0.5rem 1.75rem;
-            width: 12rem;
+            border-bottom: 2rem;
         }
-        .showcase .showcase-button a {
-            color: var(--color-theme);
-            font-family: var(--font-play);
-            font-weight: var(--font-weight-medium);
-            font-size: var(--font-size-18pt);
-            text-decoration: none;
-        }
-
-        .showcase .showcase-button:hover {
-            background-color: var(--color-theme-dark);
-        } */
-
-
+            .showcase .container button:hover {
+                background-color: var(--color-theme-dark);
+            }
+            .showcase .container button a{
+                color: var(--color-theme);
+                font-weight: var(--font-weight-medium);
+                font-size: var(--font-size-18pt);
+                text-decoration: none;
+            }
+                
     /* Hidden mobile content */
     .showcase img {
         display: none;
+    }
+
+
+/* Information section */
+
+.information-links .info-box {
+    display: flex;
+    align-items: center;
+    background-color: #EDFCFA;
+    border-radius: var(--border-radius-small);
+    margin-top: 1rem;
+}
+    .information-links .info-box i {
+        margin: 0 1rem;
+    }
+    .information-links .info-box div {
+        margin-top: 1rem;
+    }
+
+.information-links .support-box {
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    background-color: var(--color-theme);
+    border-radius: var(--border-radius-small);
+    margin-top: 1rem;
+}
+    .information-links .support-box i {
+        margin: 0 1rem;
+    }
+    .information-links .support-box div {
+        margin-top: 1rem;
     }
 
 

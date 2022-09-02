@@ -333,18 +333,24 @@ html, body {
     
     .information-links {
         display: flex;
+        flex-direction: column;
+        max-width: 1700px;   
     }
     .information-links .first-containers {
         display: flex;
+        flex: 1;
     }
     .information-links .second-containers {
         display: flex;
+        flex: 1;
     }
     .information-links .info-box {
         margin: 1rem;
+        flex: 1;
     }
     .information-links .support-box {
         margin: 1rem;
+        flex: 1;
     }
 }
 
@@ -353,10 +359,13 @@ html, body {
 }
 
 @media (min-width: 1200px) {
-
+    .information-links {
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 1400px) {
+    
 
 }
 

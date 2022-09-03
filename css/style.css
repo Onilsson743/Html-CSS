@@ -231,42 +231,39 @@ html, body {
 
 /* Information section */
 
-.information-box {
+.information-boxes {
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
 
-.information-box .info-box {
+.information-boxes .info-box {
     display: flex;
     align-items: center;
     background-color: #EDFCFA;
     border-radius: var(--border-radius-small);
     margin-top: 1rem;
 }
-    .information-box .info-box h6 {
+    .information-boxes .info-box h6 {
         color: var(--color-theme);
     }
-    .information-box .info-box i {
+    .information-boxes .info-box i {
         margin: 0 1rem;
     }
-    .information-box .info-box div {
+    .information-boxes .info-box div {
         margin-top: 1rem;
+    }
+    .information-boxes .info-box:hover {
+        background-color: var(--color-theme);
+        color: var(--color-white);
+    }
+    .information-boxes .info-box:hover img {
+        filter: brightness(1000%);
+    }
+    .information-boxes .info-box:hover h6 {
+        color: var(--color-white);
     }
 
-.information-box .support-box {
-    display: flex;
-    align-items: center;
-    color: var(--color-white);
-    background-color: var(--color-theme);
-    border-radius: var(--border-radius-small);
-    margin-top: 1rem;
-}
-    .information-box .support-box i {
-        margin: 0 1rem;
-    }
-    .information-box .support-box div {
-        margin-top: 1rem;
-    }
+
 
 
 /* Headlines section */
@@ -366,27 +363,24 @@ html, body {
             width: 50%;
         }
     
-    .information-box {
+    .information-boxes {
         display: flex;
         flex-direction: column;
         max-width: 1700px;   
     }
-    .information-box .first-containers {
+    .information-boxes .first-containers {
         display: flex;
         flex: 1;
     }
-    .information-box .second-containers {
+    .information-boxes .second-containers {
         display: flex;
         flex: 1;
     }
-    .information-box .info-box {
+    .information-boxes .info-box {
         margin: 1rem;
         flex: 1;
     }
-    .information-box .support-box {
-        margin: 1rem;
-        flex: 1;
-    }
+    
 }
 
 @media (min-width: 992px) {
@@ -394,7 +388,7 @@ html, body {
 }
 
 @media (min-width: 1200px) {
-    .information-box {
+    .information-boxes {
         flex-direction: row;
     }
     

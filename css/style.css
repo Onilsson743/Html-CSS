@@ -344,6 +344,19 @@ html, body {
 
 
 
+
+
+
+
+    footer {
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+    }
+        footer h4 {
+            
+        }
+
+
 @media (min-width: 576px) {
     
 }

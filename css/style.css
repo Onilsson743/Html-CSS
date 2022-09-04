@@ -233,7 +233,7 @@ html, body {
 
 .information-boxes {
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    
 }
 
 .information-boxes .info-box {
@@ -265,11 +265,12 @@ html, body {
 
 
 
-
 /* Titles */
 
 .title {
     text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
     .title h1 {
         color: var(--color-theme-dark);
@@ -291,7 +292,6 @@ html, body {
     gap: 0.5rem;
     grid-template-columns: repeat(5, 250px);
     grid-template-rows: repeat(3, 250px);
-    margin-top: 5rem;
     margin-bottom: 5rem;
 }
     .categories .category-box {
@@ -342,22 +342,89 @@ html, body {
     }
 
 
+/* New arrivals section */
 
-
-
-
-
-
-    footer {
-        background-color: var(--color-theme-dark);
-        color: var(--color-white);
-        padding-bottom: 0.5rem;
-        padding-top: 1.3rem;
+.new-arrivals {
+    display: flex;
+    justify-content: space-between;
+}
+    .new-arrivals .arrival-box {
+        background-color: var(--color-gray-3);
+        border-radius: var(--border-radius-small);
+        width: 32%;
+        height: 500px;
+        position: relative;
         
     }
-        footer h4 {
+        .new-arrivals .arrival-box div {
+            background-color: var(--color-theme-dark);
+            color: var(--color-white);
+            width: 100%;
+            border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
+            position: absolute;
+            bottom: 0px;
+            padding: 1rem;
+        }
+
+/* New customer discount section */
+.discount-section {
+    background-color: var(--color-gray-1);
+    
+}
+    .discount-section .container {
+        display: flex;
+        height: 420px;
+        margin-top: 10rem;
+        
+    }
+        .discount-section .container .discount-info {
+            background-color: var(--color-theme);
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--color-white);
             
         }
+            .discount-section .container .discount-info h1 {
+                font-size: var(--font-size-60pt);
+                display: flex;
+                
+            }
+                .discount-section .container .discount-info strong {
+                    font-size: var(--font-size-36pt);
+                    
+                }
+            .discount-section .container .discount-info button {
+                color: var(--color-white);
+                background-color: var(--color-theme-dark);
+                border-radius: var(--border-radius-medium);
+            }
+    .discount-section .container .middle-div {
+        width: 50%;
+    }
+    .discount-section .container .information {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;                
+        width: 50%;
+    }
+
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: var(--color-theme-dark);
+    color: var(--color-white);
+    padding-bottom: 0.5rem;
+    padding-top: 1.3rem;
+    
+}
+
 
 
 @media (min-width: 576px) {

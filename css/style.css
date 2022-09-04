@@ -266,23 +266,35 @@ html, body {
 
 
 
-/* Headlines section */
+/* Titles */
 
-.headline {
+.title {
     text-align: center;
 }
-    .headline h1 {
+    .title h1 {
         color: var(--color-theme-dark);
         font-weight: var(--font-weight-bold);
     }
-        .headline h1 strong{
+        .title h1 span{
             color: var(--color-theme);
         }
-    .headline img {
+    .title img {
         margin-top: 0.4rem;
         margin-bottom: 1.4rem;
     }
 
+
+/* Categories section */
+
+.categories {
+    display: grid;
+    gap: 0.5rem;
+}
+    .categories div {
+        background-color: var(--color-theme);
+        border: 1px solid black;
+        border-radius: var(--border-radius-small);
+    }
 
 
 

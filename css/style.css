@@ -132,6 +132,18 @@ html, body {
     .main-menu .input-group button {
         color: var(--color-theme-dark); 
     }
+    .main-menu .menu-links #cart {
+        position: relative;
+    }
+        .main-menu .menu-links #cart .badge {
+            background-color: var(--color-theme);
+            position: absolute;
+            top: -1.2rem;
+            left: 0.8rem;
+        }
+            .main-menu .menu-links #cart .badge:hover {
+                background-color: var(--color-theme-dark);
+            }
 
 
     /* Hidden mobile content */
@@ -300,6 +312,8 @@ html, body {
         position: relative;
     }
         .categories .category-box .category-title {
+            display: flex;
+            flex-direction: column;
             background-color: var(--color-theme-dark);
             color: var(--color-theme);
             border-radius: 0 var(--border-radius-small);
@@ -308,9 +322,17 @@ html, body {
             width: 50%;
             position: absolute;
             bottom: 0px;
-            
-                   
+            height: 35px;
         }
+            .categories .category-box .category-title span {
+                color: var(--color-white);
+                font-size: 0.9rem;
+            }
+
+            .categories .category-box .category-title:hover {
+                height: 60px;
+            }
+
 
     #category-box-1 {
         grid-column: 1 / 2;

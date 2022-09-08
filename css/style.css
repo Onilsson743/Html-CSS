@@ -355,6 +355,7 @@ html, body {
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 1rem;
+    margin-bottom: 5rem;
     
 }
     .new-arrivals .arrival-box {
@@ -377,70 +378,48 @@ html, body {
 
 /* New customer discount section */
 .discount-section {
-    background-color: var(--color-gray-1);
-    
+    background-color: var(--color-gray-2);
 }
-    .discount-section .container {
-        display: flex;
-        height: 420px;
-        margin-top: 10rem;
+    .discount-section .discount-info {
+        text-align: center;
+        color: var(--color-white);
+        background-color: var(--color-theme);
+        border-radius: 10px;
+        padding: 2rem 0;
+    }
+    .discount-section .container .discount-info h1 {
+        font-size: var(--font-size-60pt);
         
         
     }
-        .discount-section .container .discount-info {
-            background-color: var(--color-theme);
-            text-align: center;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .discount-section .container .discount-info strong {
+            /* font-size: var(--font-size-36pt); */
+            /* margin-top: 32px; */
+            margin-left: 5px;
+            
+        }
+    .discount-section button {
+        /* display: block; */
+        font-size: var(--font-size-18pt);
+        color: var(--color-theme);
+        background-color: var(--color-white);
+        border-radius: 30px;
+        padding: 0.7rem 2rem;
+        
+        /* margin-top: 1rem;    */
+        border: none;   
+        font-weight: var(--font-weight-medium);
+        transition: 0.3s;
+    }
+        .discount-section button:hover {
+            background-color: var(--color-theme-dark);
             color: var(--color-white);
-            padding: 0 2rem;
             
         }
-            .discount-section .container .discount-info h1 {
-                font-size: var(--font-size-60pt);
-                display: flex;
-                
-            }
-                .discount-section .container .discount-info strong {
-                    font-size: var(--font-size-36pt);
-                    margin-top: 32px;
-                    margin-left: 10px;
-                    
-                }
-            .discount-section button {
-                display: block;
-                font-size: var(--font-size-18pt);
-                color: var(--color-theme);
-                background-color: var(--color-white);
-                border-radius: 30px;
-                padding: 0.7rem 2rem;
-                margin-top: 1rem;   
-                border: none;   
-                font-weight: var(--font-weight-medium);
-            }
-                .discount-section button:hover {
-                    background-color: var(--color-theme-dark);
-                    color: var(--color-white);
-                    transition: 0.3s;
-                }
-                
-        .discount-section .middle-div {
-            width: 50%;
-        }
-        .discount-section .information {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;                
-            width: 50%;
-        }
-            .discount-section .information p{
-                color: var(--color-white);
-            }
-            
+    .discount-section .information {
+        text-align: center;  
+        padding: 2rem 0; 
+    }
 
 
 
@@ -575,11 +554,115 @@ footer {
     .new-arrivals .arrival-box {
         width: 32%;
     }
+
+    /* New customer discount section */
+
+    .discount-section .container {
+        display: flex;
+        justify-content: space-between;
+        height: 420px;
+    }
+        .discount-section .middle-div {
+            flex: 4;
+        }
+        .discount-section .discount-info {
+            flex: 6;
+            border-radius: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;            
+        }
+            .discount-section .discount-info strong {
+                font-size: var(--font-size-36pt);
+            }
+            .discount-section .discount-info button {
+                width: 200px;
+                align-self: center;
+            }
+        .discount-section .information {
+            flex: 10;
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            align-items: start;
+            justify-content: center;
+        }
+
+
+
+    /* .discount-section {
+    background-color: var(--color-gray-1);
+    
+}
+    .discount-section .container {
+        display: flex;
+        height: 420px;
+        margin-top: 10rem;        
+    }
+        .discount-section .container .discount-info {
+            background-color: var(--color-theme);
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-white);
+            padding: 0 2rem;
+            
+        }
+            .discount-section .container .discount-info h1 {
+                font-size: var(--font-size-60pt);
+                display: flex;
+                
+            }
+                .discount-section .container .discount-info strong {
+                    font-size: var(--font-size-36pt);
+                    margin-top: 32px;
+                    margin-left: 10px;
+                    
+                }
+            .discount-section button {
+                display: block;
+                font-size: var(--font-size-18pt);
+                color: var(--color-theme);
+                background-color: var(--color-white);
+                border-radius: 30px;
+                padding: 0.7rem 2rem;
+                margin-top: 1rem;   
+                border: none;   
+                font-weight: var(--font-weight-medium);
+            }
+                .discount-section button:hover {
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-white);
+                    transition: 0.3s;
+                }
+                
+        .discount-section .middle-div {
+            width: 50%;
+        }
+        .discount-section .information {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;                
+            width: 50%;
+        }
+            .discount-section .information p{
+                color: var(--color-white);
+            }
+             */
+
+
 }
 
 @media (min-width: 1200px) {
     .information-boxes {
         flex-direction: row;
+    }
+    .discount-section .middle-div {
+        flex: 8;
     }
     
 }

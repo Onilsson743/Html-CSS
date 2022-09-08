@@ -364,6 +364,7 @@ html, body {
         overflow: hidden;
         position: relative;
         
+        
     }
         .new-arrivals .arrival-box img {
             width: 100%;
@@ -371,21 +372,33 @@ html, body {
             
         .new-arrivals .arrival-box div {
             background-color: var(--color-theme-dark);
+            opacity: 60%;
             color: var(--color-white);
             width: 100%;
+            height: 100%;
             border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
             position: absolute;
-            bottom: -108px;
+            top: 91%;
             padding: 1rem;
+            transition: 0.3s;
         }
-        .new-arrivals .arrival-box ul {
+        .new-arrivals .arrival-box .card-menu {
             position: absolute;
-            border-radius: 20px;
+            border-radius: 30px;
             background-color: var(--color-white);
-            top: 5px;
-            right: 5px;
-            list-style-type: none;
+            top: 100%;
+            right: 5%;
+            padding: 0.8rem;
+            z-index: 1;
+            list-style: none;
             font-size: 1.4rem;
+            transition: 0.3s;
+        }
+        .new-arrivals .arrival-box:hover .card-menu {
+            top: 5%;
+        }
+        .new-arrivals .arrival-box:hover div {
+            top: 0%;
         }
             
         

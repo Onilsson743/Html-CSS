@@ -352,7 +352,7 @@ html, body {
 
 .new-arrivals {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     row-gap: 1rem;
     margin-bottom: 5rem;
@@ -404,7 +404,7 @@ html, body {
         .new-arrivals .arrival-box .card-info {
             color: var(--color-white);
             width: 100%;
-            height: 100%;
+            
             position: absolute;
             z-index: 2;
             top: 89%;
@@ -430,27 +430,32 @@ html, body {
             }
                 .box i{
                     font-size: 40px;
-                    transition: 0.3s;
                     color: white;
                 }
                     .star-box i:hover {
                         color: var(--color-theme);
+                        transition: 0.3s ease-in-out;
                     }
             
                     .s1:hover ~ i {
                         color: var(--color-theme);
+                        transition: 0.3s ease-in-out;
                     }
                     .s2:hover ~ i {
                         color: var(--color-theme);
+                        transition: 0.3s ease-in-out;
                     }
                     .s3:hover ~ i {
                         color: var(--color-theme);
+                        transition: 0.3s ease-in-out;
                     }
                     .s4:hover ~ i {
                         color: var(--color-theme);
+                        transition: 0.3s ease-in-out;
                     }
                     .s5:hover ~ i {
                         color: var(--color-theme);
+                        transition: 0.3s ease-in-out;
                     }
 
 
@@ -461,7 +466,7 @@ html, body {
             top: 0%;
         }
         .new-arrivals .arrival-box:hover .card-info {
-            top: 60%;
+            top: 50%;
         }
             
         
@@ -632,10 +637,14 @@ footer {
     }
 
     /* New arrival section */
-
-    .new-arrivals .arrival-box {
-        width: 49%;
+    .new-arrivals {
+        justify-content: space-between;
     }
+        .new-arrivals .arrival-box {
+            width: 49%;
+        }
+
+    
     
 }
 

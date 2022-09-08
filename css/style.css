@@ -371,7 +371,7 @@ html, body {
         }
         .new-arrivals .arrival-box .card-background {
             background-color: var(--color-theme-dark);
-            opacity: 70%;
+            opacity: 88%;
             position: absolute;
             top: 90%;
             height: 100%;
@@ -385,7 +385,7 @@ html, body {
             height: 100%;
             position: absolute;
             z-index: 2;
-            top: 91%;
+            top: 89%;
             padding: 1rem;
             transition: 0.3s;
         }

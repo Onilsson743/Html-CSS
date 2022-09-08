@@ -425,6 +425,35 @@ html, body {
                 color: var(--color-theme);
                 font-size: 1.25rem;
             }
+            .star-box {
+                direction: rtl;
+            }
+                .box i{
+                    font-size: 40px;
+                    transition: 0.3s;
+                    color: white;
+                }
+                    .star-box i:hover {
+                        color: var(--color-theme);
+                    }
+            
+                    .s1:hover ~ i {
+                        color: var(--color-theme);
+                    }
+                    .s2:hover ~ i {
+                        color: var(--color-theme);
+                    }
+                    .s3:hover ~ i {
+                        color: var(--color-theme);
+                    }
+                    .s4:hover ~ i {
+                        color: var(--color-theme);
+                    }
+                    .s5:hover ~ i {
+                        color: var(--color-theme);
+                    }
+
+
         .new-arrivals .arrival-box:hover .card-menu {
             top: 5%;
         }

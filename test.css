@@ -348,13 +348,14 @@ html, body {
         }
 
 
+
 /* New arrivals section */
 
 .new-arrivals {
     display: flex;
     justify-content: space-between;
+    
     flex-wrap: wrap;
-    row-gap: 1rem;
     
 }
     .new-arrivals .arrival-box {
@@ -363,6 +364,8 @@ html, body {
         width: 100%;
         height: 500px;
         position: relative;
+        
+        
         
     }
         .new-arrivals .arrival-box div {

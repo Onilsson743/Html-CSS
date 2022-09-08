@@ -369,15 +369,22 @@ html, body {
         .new-arrivals .arrival-box img {
             width: 100%;
         }
-            
-        .new-arrivals .arrival-box div {
+        .new-arrivals .arrival-box .card-background {
             background-color: var(--color-theme-dark);
-            opacity: 60%;
+            opacity: 70%;
+            position: absolute;
+            top: 90%;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            transition: 0.3s ease-in-out;
+        }
+        .new-arrivals .arrival-box .card-info {
             color: var(--color-white);
             width: 100%;
             height: 100%;
-            border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
             position: absolute;
+            z-index: 2;
             top: 91%;
             padding: 1rem;
             transition: 0.3s;
@@ -389,16 +396,19 @@ html, body {
             top: 100%;
             right: 5%;
             padding: 0.8rem;
-            z-index: 1;
+            z-index: 2;
             list-style: none;
             font-size: 1.4rem;
-            transition: 0.3s;
+            transition: 0.3s ease-in-out;
         }
         .new-arrivals .arrival-box:hover .card-menu {
             top: 5%;
         }
-        .new-arrivals .arrival-box:hover div {
+        .new-arrivals .arrival-box:hover .card-background {
             top: 0%;
+        }
+        .new-arrivals .arrival-box:hover .card-info {
+            top: 60%;
         }
             
         

@@ -3,6 +3,7 @@
 :root {
     --color-theme: #20D3C2;
     --color-theme-light: #EEFCFB;
+    --color-theme-light-dark: #50546E;
     --color-theme-dark: #0E153D;
     --color-dark: #080C24;
     --color-white: #ffffff;
@@ -160,7 +161,7 @@ html, body {
     border-top: 1px solid var(--color-gray-2);
     border-bottom: 1px solid var(--color-gray-2);
 }
-    .main-menu-bottom{
+    .main-menu-bottom .container{
         display: flex;
         justify-content: space-between;           
     }
@@ -170,8 +171,11 @@ html, body {
         background-color: var(--color-theme);
         color: var(--color-white);
         border: none;
-        padding: 0.7rem 0.3rem;
+        padding: 0.7rem 0.8rem;
     }
+        .main-menu-bottom .browse-catagories button i:nth-child(2){
+            margin-left: 1.5rem;
+        }
 
         .main-menu-bottom .browse-catagories button:hover {
             background-color: var(--color-theme-dark);
@@ -311,8 +315,8 @@ html, body {
 .categories {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 1rem;
+    align-content: center;
+    gap: 1rem;
     
 }
 .categories .category-box {
@@ -322,8 +326,14 @@ html, body {
     height: 300px;
     position: relative;
     justify-self: center;
-    
 }
+    .categories .category-box {
+        transition: 0.3s ease-in-out;
+    }
+
+    .categories .category-box:hover {
+        transform: scale(1.02);
+    }
     .categories .category-box .category-title {
         display: flex;
         flex-direction: column;
@@ -336,6 +346,7 @@ html, body {
         position: absolute;
         bottom: 0px;
         height: 35px;
+        transition: 0.2s ease-in-out;
     }
         .categories .category-box .category-title span {
             color: var(--color-white);
@@ -344,7 +355,7 @@ html, body {
 
         .categories .category-box:hover .category-title {
             height: 60px;
-            transition: 0.4s;
+            
         }
 
 
@@ -427,35 +438,37 @@ html, body {
             }
             .star-box {
                 direction: rtl;
+                
             }
                 .box i{
                     font-size: 40px;
                     color: white;
+                    transition: 0.3s ease-in-out;
                 }
                     .star-box i:hover {
                         color: var(--color-theme);
-                        transition: 0.3s ease-in-out;
+                        
                     }
             
-                    .s1:hover ~ i {
+                    .star-box .s1:hover ~ i {
                         color: var(--color-theme);
-                        transition: 0.3s ease-in-out;
+                        
                     }
                     .s2:hover ~ i {
                         color: var(--color-theme);
-                        transition: 0.3s ease-in-out;
+                        
                     }
                     .s3:hover ~ i {
                         color: var(--color-theme);
-                        transition: 0.3s ease-in-out;
+                        
                     }
                     .s4:hover ~ i {
                         color: var(--color-theme);
-                        transition: 0.3s ease-in-out;
+                        
                     }
                     .s5:hover ~ i {
                         color: var(--color-theme);
-                        transition: 0.3s ease-in-out;
+                        
                     }
 
 
@@ -540,7 +553,7 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
         .categories .category-box {
-            width: 49%;
+            width: 48%;
         }
         
     
@@ -692,69 +705,6 @@ footer {
 
 
 
-    /* .discount-section {
-    background-color: var(--color-gray-1);
-    
-}
-    .discount-section .container {
-        display: flex;
-        height: 420px;
-        margin-top: 10rem;        
-    }
-        .discount-section .container .discount-info {
-            background-color: var(--color-theme);
-            text-align: center;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: var(--color-white);
-            padding: 0 2rem;
-            
-        }
-            .discount-section .container .discount-info h1 {
-                font-size: var(--font-size-60pt);
-                display: flex;
-                
-            }
-                .discount-section .container .discount-info strong {
-                    font-size: var(--font-size-36pt);
-                    margin-top: 32px;
-                    margin-left: 10px;
-                    
-                }
-            .discount-section button {
-                display: block;
-                font-size: var(--font-size-18pt);
-                color: var(--color-theme);
-                background-color: var(--color-white);
-                border-radius: 30px;
-                padding: 0.7rem 2rem;
-                margin-top: 1rem;   
-                border: none;   
-                font-weight: var(--font-weight-medium);
-            }
-                .discount-section button:hover {
-                    background-color: var(--color-theme-dark);
-                    color: var(--color-white);
-                    transition: 0.3s;
-                }
-                
-        .discount-section .middle-div {
-            width: 50%;
-        }
-        .discount-section .information {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;                
-            width: 50%;
-        }
-            .discount-section .information p{
-                color: var(--color-white);
-            }
-             */
 
 
 }
@@ -814,9 +764,78 @@ footer {
         grid-column: 5 / -1;
         grid-row: 3 / -1;
     }
+
+    
     
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.site-title {
+    background-color: var(--color-theme-light-dark);
+}
+    .site-title .container {
+        color: var(--color-theme);
+        height: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .site-title .container h4 {
+        /* font-weight: var(--font-weight-medium); */
+        
+    }
+        .site-title .container .breadcrumb {
+            gap: 0.5re;
+            text-decoration: none;
+        }
+
+    
+        .site-title .container .right-side {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            
+        }
+        .site-title .container .breadcrumb a {
+            text-decoration: none;
+            color: var(--color-theme);
+            transition: 0.3s ease-in-out;
+        }
+
+            .site-title .container .breadcrumb a:hover {
+                color: white;
+                font-size: var(--font-size-16pt);
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* @keyframes slideleft {

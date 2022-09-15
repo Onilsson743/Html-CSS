@@ -925,6 +925,18 @@ footer {
             width: 30%;
             margin: auto;
         }
+    .signin-register .container .window .external-login {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+        .signin-register .container .window .external-login button {
+            border-radius: var(--border-radius-small);
+                        
+        }
+            .signin-register .container .window .external-login button img{
+
+            }
 
 
 
